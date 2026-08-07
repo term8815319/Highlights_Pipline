@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────
+# SiFar Video_Pipline · .gitignore
+# 私有仓库，示例图片/视频/BGM 保留，只排除环境和临时产物
+# ─────────────────────────────────────────────
+
+# Python 虚拟环境（几百 MB，可重建，绝对不要提交）
+.venv/
+venv/
+env/
+ENV/
+
+# Python 编译产物
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 测试与类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 脚本运行时的临时目录（make_reel.py --keep-temp 会留下 reel_xxxx）
+reel_*/
+tmp/
+temp/
+*.tmp
+
+# 渲染输出（示例成片见 samples/，这里排除的是日常跑测试产生的）
+*.log
+
+# 编辑器与系统
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 密钥与本地配置（eBird API key 之类绝对不能进仓库）
+.env
+.env.*
+*.key
+secrets.json
+config.local.*
