@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-方案 B：Pillow 逐帧合成图层 + ffmpeg 编码
+方案 B：Pillow 逐帧合成图层 + ffmpeg 编码 v1 版本
 复刻参考片《高光时刻》的五幕结构：
   1 数字开场（年份字形当遮罩，画面从字里透出来）
   2 标题段（Ken Burns + 主标题 + 手绘装饰）
