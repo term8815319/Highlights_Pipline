@@ -24,7 +24,7 @@ v2 改动：
   python make_reel.py bird_images out.mp4 --limit 0          # 全部用上
   python make_reel.py bird_images out.mp4 --no-text          # 不画字
   python make_reel.py bird_images out.mp4 --vertical         # 1080x1920 竖版
-  python make_reel.py --help
+  python make_reel.py --help                                 # 帮助
 """
 import argparse, os, re, shutil, subprocess, sys, tempfile
 from concurrent.futures import ThreadPoolExecutor
